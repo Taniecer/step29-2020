@@ -1,0 +1,213 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+#session-screen {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%,
+      rgba(109, 109, 109, 1) 44%, rgba(255, 255, 255, 1) 91%);
+  bottom: 0;
+  height: 85%;
+  width: 100%;
+}
+
+#session-info-div {
+  background-color: #fff;
+  border: 5px solid #fd5d00;
+  bottom: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: none;
+  min-height: 500px;
+  height: 50%;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: .3s;
+  width: 400px;
+}
+
+.close {
+  cursor: pointer;
+  padding: 12px 14px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.close:hover {
+  background: #bbb;
+}
+
+#header-bar-main {
+  height: 10%;
+  top: 0;
+  width: auto;
+}
+
+#session-info-span {
+  background-size: cover;
+  border-radius: 50%;
+  border: 5px solid #fd5d00;
+  display: inline-block;
+  height: inherit;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 5%;
+}
+
+#session-info-span-text {
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#session-id-div {
+  align-items: center;
+  display: flex;
+  width: 40%;
+}
+
+.session-id-label {
+  margin: 5px 10px 5px 10px;
+}
+
+.session-id-input {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+#session-info-attendees {
+  height: 70%;
+  margin: 5px;
+  overflow: scroll;
+  width: 98%;
+  bottom: 0;
+}
+
+#session-status {
+  background-color: #fd5d00;
+  border-bottom: 1px outset;
+  color: white;
+  padding: 5px 0 5px;
+  text-align: center;
+  width: 100%;
+}
+
+#alert-membership {
+  background-color: #333;
+  border-radius: 2px;
+  bottom: 100px;
+  color: #fff;
+  left: 50%;
+  min-width: 250px;
+  padding: 16px;
+  position: fixed;
+  text-align: center;
+  visibility: hidden;
+  z-index: 1;
+}
+
+#alert-membership.display-message {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 100px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 100px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+.attendee-name {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.controller-toggle {
+  background-size: cover;
+  border-radius: 50%;
+  border: 5px solid #fd5d00;
+  display: inline-block;
+  height: 60%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+}
+
+.attendee-div {
+  border: 2px solid #fd5d00;
+  height: 20%;
+  margin: 10px 0 10px;
+  position: relative;
+}
+
+#header-bar-attendee {
+  height: 5%;
+  padding-bottom: 10px;
+  position: relative;
+  top: 0;
+}
+
+#screen-name-text {
+  display: inline-block;
+  margin-left: 5px;
+  position: absolute;
+}
+
+#controller-text {
+  bottom: 0;
+  margin-right: 5%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#welcome-message {
+  background: #fff;
+  border: 5px solid #fd5d00;
+  display: none;
+  height: auto;
+  left: 50%;
+  padding: 45px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8"/>
+  <title>VMN</title>
+  <link rel="stylesheet" href="styles/session-style.css"/>
+  <script type="module" src="scripts/session-script.js"></script>
+  <div id="header-bar-main">
+    <h1 class="center-text">Virtual Movie Night</h1>
+    <span id="session-info-span">
+      <span id="session-info-span-text"><b>Session Info</b></span>
+    </span>
+  </div>
+  <div id="welcome-message">
+    <span class="close">X</span>
+    <p>Thank you for using Virtual Movie Night! 
+      Share the Session ID below with other party goers
+      to get the party started!
+    </p>
+    <label class="session-id-label" for="welcome-message-input">Session-ID:
+    </label>
+    <input type="text" class="session-id-input" id="welcome-message-input" 
+        name="session-id">
+  </div>
+  <div id="session-status" class="center-text">Connecting...</div>
+  <div id="session-screen"></div>
+  <div id="session-info-div">
+    <span class="close">X</span>
+    <div id="session-id-div">
+      <label class="session-id-label" for="session-info-input">Session-ID:
+      </label>
+      <input type="text" class="session-id-input" id="session-info-input"
+          name="session-id">
+    </div>
+    <h3 class="center-text">Attendees</h3>
+    <div id="header-bar-attendee">
+      <h4 id="screen-name-text">Screen Name</h4>
+      <h4 id="controller-text">Controller</h4>
+    </div>
+    <div id="session-info-attendees"></div>
+  </div>
+  <div id="alert-membership"></div>
+</html>
